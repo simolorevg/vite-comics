@@ -1,8 +1,10 @@
 <script>
 import AppBanner from './components/AppBanner.vue';
+import AppContent from './components/AppContent.vue';
 export default {
   components: {
-    AppBanner
+    AppBanner,
+    AppContent
   }
 
 }
@@ -10,6 +12,7 @@ export default {
 
 <template>
   <AppBanner />
+  <AppContent />
 </template>
 
 <style lang="scss">

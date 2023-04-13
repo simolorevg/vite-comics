@@ -92,6 +92,7 @@ export default {
         .logo-section {
             width: 30%;
             height: 100%;
+            padding: 10px;
         }
 
         .links-section {
