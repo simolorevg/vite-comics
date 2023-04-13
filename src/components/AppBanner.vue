@@ -82,8 +82,6 @@ export default {
     .banner-container {
         width: 80%;
         height: 90px;
-        /*DEBUG*/
-        border: 1px solid black;
         @include flexrwcenter;
 
         img {
