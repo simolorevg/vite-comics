@@ -4,3 +4,20 @@
     align-items: center;
     gap: 10px;
 }
+
+@mixin flexrwspacebtwcenter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin flexrwaligncenter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+@mixin flexclstart {
+    display: flex;
+    justify-content: flex-start;
+}
