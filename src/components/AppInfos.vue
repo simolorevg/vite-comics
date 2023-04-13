@@ -184,6 +184,19 @@ export default {
                 <img src="../assets/img/dc-logo-bg.png" alt="dc logo background">
             </div>
         </div>
+        <div class="call-to-action">
+            <div class="container-to-action">
+                <a href="#link" class="sign-up-btn">
+                    SIGN UP NOW
+                </a>
+                <div class="social-links">
+                    <h3>Follow Us</h3>
+                    <img src="../assets/img/footer-facebook.png" alt="">
+                    <img src="../assets/img/footer-periscope.png" alt="">
+                    <img src="../assets/img/footer-pinterest.png" alt="">
+                </div>
+            </div>
+        </div>
     </div>
 </template>
 <style lang="scss" scoped>
@@ -193,6 +206,7 @@ export default {
 .footer-container {
     width: 100%;
     background-image: url('../assets/img/footer-bg.jpg');
+    position: relative;
 
     .infos-container {
         width: 80%;
@@ -218,8 +232,6 @@ export default {
 
             .first-row {
                 width: 20%;
-                /*debug*/
-                border: 1px solid white;
             }
 
             .second-row {
@@ -233,6 +245,44 @@ export default {
 
             img {
                 width: 100%;
+            }
+        }
+    }
+
+    .call-to-action {
+        width: 100%;
+        height: 70px;
+        background-color: black;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        color: white;
+
+        .container-to-action {
+            width: 80%;
+            margin: 0 auto;
+            @include flexrwspacebtwcenter;
+            padding: 10px;
+
+            a {
+                color: white;
+                text-decoration: none;
+            }
+
+            .sign-up-btn {
+                border: 1px solid blue;
+                width: 9em;
+                height: 2em;
+                @include flexrwcenter;
+            }
+
+            .social-links {
+                height: 100%;
+                @include flexrwcenter;
+
+                h3 {
+                    color: aqua;
+                }
             }
         }
     }
