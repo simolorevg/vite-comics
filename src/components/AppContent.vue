@@ -87,8 +87,15 @@ export default {
 <template>
     <div class="content-container">
         <div class="content">
+            <div class="current-series">
+                CURRENT SERIES
+            </div>
             <div class="row">
-                <ComicCard v-for="(comic, index) in comicCardsArray" :key="index" :thumb="comic.thumb" />
+                <ComicCard v-for="(comic, index) in comicCardsArray" :key="index" :thumb="comic.thumb"
+                    :series="comic.series" />
+            </div>
+            <div class="show-more">
+                SHOW MORE
             </div>
         </div>
     </div>
@@ -102,16 +109,35 @@ export default {
     background-color: rgba($color: #2e2d2d, $alpha: 1.0);
     padding: 10px;
     @include flexrwcenter;
+    position: relative;
 
     .content {
         width: 80%;
         margin: 0 auto;
+        @include flexclcenter;
 
         .row {
             width: 100%;
             @include flexrwcenter;
-            border: 1px solid white;
             flex-wrap: wrap;
+            padding: 10px;
+        }
+
+        .current-series {
+            width: 12em;
+            padding: 1em;
+            background-color: #0082f8;
+            @include flexrwcenter;
+            position: absolute;
+            top: -30px;
+            left: 15%;
+        }
+
+        .show-more {
+            width: 9em;
+            padding: 0.5em;
+            background-color: #0082f8;
+            @include flexrwcenter;
         }
     }
 }
