@@ -10,14 +10,12 @@ export default {
     AppMerchBanner,
     AppInfos
   }
-
 }
 </script>
 
 <template>
   <AppBanner />
   <AppContent />
-  <AppMerchBanner />
   <AppInfos />
 </template>
 
