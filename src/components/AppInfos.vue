@@ -296,7 +296,7 @@ export default {
 
         .infos-links {
             width: 60%;
-            @include flexrwaligncenter;
+            display: flex;
 
             h3 {
                 color: white;
@@ -317,7 +317,11 @@ export default {
 
             .second-row {
                 width: 20%;
-                @include flexclstart;
+            }
+
+            .third-row {
+                width: 20%;
+                height: 100%;
             }
         }
 
