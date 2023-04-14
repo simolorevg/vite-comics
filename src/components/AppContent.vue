@@ -139,6 +139,7 @@ export default {
             padding: 0.5em;
             background-color: #0082f8;
             @include flexrwcenter;
+            cursor: pointer;
         }
     }
 }

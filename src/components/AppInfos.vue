@@ -131,6 +131,50 @@ export default {
 </script>
 <template>
     <div class="footer-container">
+        <div class="merch-container">
+            <div class="merch-selection">
+                <div class="buy-thing">
+                    <div class="thing-icon">
+                        <img src="../assets/img/buy-comics-digital-comics.png" alt="digital comics">
+                    </div>
+                    <div class="thing-text">
+                        <p>Lorem Thing</p>
+                    </div>
+                </div>
+                <div class="buy-thing">
+                    <div class="thing-icon">
+                        <img src="../assets/img/buy-comics-merchandise.png" alt="">
+                    </div>
+                    <div class="thing-text">
+                        <p>Lorem Thing</p>
+                    </div>
+                </div>
+                <div class="buy-thing">
+                    <div class="thing-icon">
+                        <img src="../assets/img/buy-comics-shop-locator.png" alt="">
+                    </div>
+                    <div class="thing-text">
+                        <p>Lorem Thing</p>
+                    </div>
+                </div>
+                <div class="buy-thing">
+                    <div class="thing-icon">
+                        <img src="../assets/img/buy-dc-power-visa.svg" alt="">
+                    </div>
+                    <div class="thing-text">
+                        <p>Lorem Thing</p>
+                    </div>
+                </div>
+                <div class="buy-thing">
+                    <div class="thing-icon">
+                        <img src="../assets/img/buy-comics-subscriptions.png" alt="">
+                    </div>
+                    <div class="thing-text">
+                        <p>Lorem Thing</p>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="infos-container">
             <div class="infos-links">
                 <div class="first-row">
@@ -207,6 +251,43 @@ export default {
     width: 100%;
     background-image: url('../assets/img/footer-bg.jpg');
     position: relative;
+
+    .merch-container {
+        background-color: #0082f8;
+        width: 100%;
+        position: absolute;
+
+        .merch-selection {
+            width: 70%;
+            margin: 0 auto;
+            @include flexrwcenter;
+
+            .buy-thing {
+                width: calc(100% / 5);
+                display: flex;
+                padding: 5px;
+                cursor: pointer;
+
+                .thing-icon {
+                    width: 40%;
+                    margin-left: 10px;
+
+                    img {
+                        max-width: 50px;
+                    }
+                }
+
+                .thing-text {
+                    flex-grow: 1;
+                }
+
+                .thing-text {
+                    @include flexrwcenter;
+                    color: white;
+                }
+            }
+        }
+    }
 
     .infos-container {
         width: 80%;

@@ -76,7 +76,6 @@ export default {
 .banner {
     width: 100%;
     background-color: white;
-    margin-top: 10px;
     @include flexrwcenter;
 
     .banner-container {
